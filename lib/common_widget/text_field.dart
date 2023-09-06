@@ -1,7 +1,6 @@
 //----------------------TEXT FIELD WIDGET -------------------
 
 import 'package:flutter/material.dart';
-import 'package:ms_global_task1/constants/colors.dart';
 
 class TextFieldWidget extends StatelessWidget {
   final String title;

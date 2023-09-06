@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:ms_global_task1/Screens/Home/home_view.dart';
 import 'package:ms_global_task1/Screens/splash/splash_view.dart';
 
 void main() {
@@ -13,9 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      //home: SplashScreen(),
-      home: HomeView(),
+    return const GetMaterialApp(
+      home: SplashScreen(),
     );
   }
 }

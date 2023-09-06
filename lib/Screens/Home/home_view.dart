@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ms_global_task1/Screens/Home/home_controller.dart';
-import 'package:ms_global_task1/common_widget/text_field.dart';
 import 'package:ms_global_task1/constants/colors.dart';
 
 class HomeView extends StatelessWidget {
@@ -11,7 +10,6 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
     return DefaultTabController(
       length: 2,
       initialIndex: 0,
