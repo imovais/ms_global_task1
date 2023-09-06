@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ms_global_task1/Screens/Home/home_view.dart';
+import 'package:ms_global_task1/Screens/Login/login_controller.dart';
 
 import '../../common_widget/text_field.dart';
 import '../../constants/colors.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+  LoginScreen({super.key});
+
+  final LoginController c = Get.put(LoginController());
 
   @override
   Widget build(BuildContext context) {
@@ -22,17 +25,17 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const Column(
+            Column(
               children: [
                 TextFieldWidget(title: "Email"),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 TextFieldWidget(
                   obstext: true,
                   title: "Password",
                   isSuffix: true,
-                  suffixIcon: Icon(Icons.remove_red_eye),
+                  suffixIcon: const Icon(Icons.remove_red_eye),
                 ),
               ],
             ),
