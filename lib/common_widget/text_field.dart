@@ -36,9 +36,10 @@ class TextFieldWidget extends StatelessWidget {
                   ? Padding(
                       padding: const EdgeInsets.only(right: 1),
                       child: IconButton(
-                        onPressed: () => c.showpass(),
-                        icon: const Icon(Icons.remove_red_eye),
-                      ))
+                          onPressed: () => c.showpass(),
+                          icon: c.passview.isFalse
+                              ? const Icon(Icons.visibility)
+                              : const Icon(Icons.visibility_off)))
                   : null,
               hintText: title,
               hintStyle: const TextStyle(

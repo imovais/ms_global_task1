@@ -31,12 +31,14 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                TextFieldWidget(
-                  obstext: true,
-                  title: "Password",
-                  isSuffix: true,
-                  suffixIcon: const Icon(Icons.remove_red_eye),
-                ),
+                Obx(
+                  () => TextFieldWidget(
+                    obstext: c.passview.value,
+                    title: "Password",
+                    isSuffix: true,
+                    
+                  ),
+                )
               ],
             ),
             const SizedBox(
